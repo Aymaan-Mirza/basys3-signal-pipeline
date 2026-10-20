@@ -1,4 +1,4 @@
-\# Basys 3 Real-Time Signal Processing Pipeline
+# Basys 3 Real-Time Signal Processing Pipeline
 
 A small hardware pipeline in SystemVerilog on a Digilent Basys 3 (AMD Xilinx Artix-7, 100 MHz clock). It reads an 8-bit value from the switches, smooths it with a moving average, and lights an LED when the smoothed value crosses a threshold.
 
