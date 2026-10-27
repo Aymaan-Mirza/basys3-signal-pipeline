@@ -45,9 +45,3 @@ Three self-checking testbenches in `sim/`:
 1. Create a Vivado project for the Basys 3 (xc7a35tcpg236-1).
 2. Add the files in `src/` as design sources, `constraints/basys3.xdc` as constraints, and `sim/` as simulation sources.
 3. Run the testbenches, then generate the bitstream and program the board.
-
-## Known limitations and next steps
-
-- The output is marked valid on the first sample, with no warm-up flag for the 4-sample window.
-- No synchronizer or debounce on the button input.
-- Tests are directed with hardcoded expectations. Next: random tests against a Python reference model, reset mid-stream, and 0 and 255 corner cases.
