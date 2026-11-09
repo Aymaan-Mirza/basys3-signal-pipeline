@@ -26,7 +26,7 @@ A single spike of 60 would trip a raw threshold, but the 4-sample average only r
 - **button_one_pulse**: turns a long button press into a single one-clock-cycle pulse (rising-edge detect), so one press means one sample.
 - **moving_average_filter**: keeps the last 3 samples plus the new one, sums them in 10 bits, and outputs sum[9:2], which is a divide by 4 done as a right shift (just wiring).
 - **threshold_detector**: combinational, outputs detected when the filtered value >= 40.
-- **top**: connects everything. The 8 LEDs show the filtered value, and LED 15 latches the last detection result. btnU resets.
+- **top**: connects everything. The 8 LEDs show the filtered value, and an LED 15 on the board latches the last detection result. btnU resets.
 
 ## Results
 
